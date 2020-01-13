@@ -1,0 +1,63 @@
+<?php 
+
+function pets_owners3_schema(){
+
+$schema['pets_owners3'] = array(
+		'description' => 'Stores ',
+        'fields' => array(
+            'id' => array(
+                'type' => 'serial',
+				'unsigned' => TRUE,
+                'not null' => TRUE,
+            ),
+            'name' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+            ),
+            'gender' => array(
+                'type' => 'varchar',
+				'length' => 10,
+                'not null' => TRUE,
+            ),
+            'prefix' => array(
+                'type' => 'varchar',
+                'length' => 5,
+                'not null' => TRUE,
+            ),
+			'age' => array(
+                'type' => 'int',
+                'length' => 5,
+                'not null' => TRUE,
+            ),
+			'father_name' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+				'default' => '',
+            ),
+			'mother_name' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+				'default' => '',
+            ),
+			'pets_name' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+				'default' => '',
+            ),
+			'email' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+				'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}
+
+

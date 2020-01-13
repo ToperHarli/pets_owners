@@ -1,0 +1,30 @@
+pets_owners3.form2:
+   path: '/pets_owners'
+   defaults:
+    _form:  '\Drupal\pets_owners3\Form\FormPetsOwners'
+    _title: 'Pets owners form'
+   requirements:
+    _permission: 'access content'
+pets_owners3.admin_table:
+  path: '/admin/pets_owners/table'
+  defaults:
+    _form: '\Drupal\pets_owners3\Form\TablePetsOwners'
+    _title: 'Show pets owners table'
+  requirements:
+    _permission: 'administer site configuration'
+pets_owners3.admin_table_delete:
+  path: '/admin/pets_owners3/table/{node}'
+  defaults:
+    _controller: '\Drupal\pets_owners3\Controller\ControllerPetsOwners::delete'
+    _title: 'Delete pets owners'
+  requirements:
+    _permission: 'administer site configuration'
+pets_owners3.admin_table_edit:
+  path: '/admin/pets_owners3/table/edit/{node}'
+  defaults:
+    _form: '\Drupal\pets_owners3\Form\EditPetsOwners'
+    _title: 'Edit pets owners'
+  requirements:
+    _permission: 'administer site configuration'
+ 
+ 

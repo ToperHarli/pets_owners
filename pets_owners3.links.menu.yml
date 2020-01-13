@@ -1,0 +1,6 @@
+pets_owners3.form2:
+  title: 'Pets Owners'
+  description: 'Write info about pets owners'
+  route_name: pets_owners3.form2
+  weight: 100
+  menu_name: main
